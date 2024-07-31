@@ -16,11 +16,12 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var errorMessageLabel: UILabel!
     
-    private var viewModel = AuthViewModel()
+//    private var viewModel = AuthViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupGradientBackground()
+        setupNavigationBar()
         // errorMessageLabel.isHidden = true
     }
     
@@ -42,4 +43,12 @@ class RegisterViewController: UIViewController {
         gradientLayer.endPoint = CGPoint(x: 0.5, y: 8.0)
         view.layer.insertSublayer(gradientLayer, at: 0)
     }
+    private func setupNavigationBar() {
+          // Set the title for the navigation bar
+          self.title = "Sign Up"
+
+          
+          // Alternatively, you can use navigationItem
+          // self.navigationItem.title = "Register"
+      }
 }

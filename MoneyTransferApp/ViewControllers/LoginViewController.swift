@@ -14,7 +14,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var errorMessageLabel: UILabel!
     
-    private var viewModel = AuthViewModel()
+//    private var viewModel = AuthViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
