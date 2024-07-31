@@ -20,6 +20,8 @@
 		206CFFCE2C599520004209C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 206CFFCC2C599520004209C5 /* LaunchScreen.storyboard */; };
 		206CFFDE2C5995E4004209C5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206CFFDD2C5995E4004209C5 /* User.swift */; };
 		207AC2B02C5A83D300E4919C /* SecondRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207AC2AF2C5A83D300E4919C /* SecondRegister.swift */; };
+		207E485F2C5AC0FA005932CD /* OptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207E485E2C5AC0FA005932CD /* OptionTableViewCell.swift */; };
+		207E48612C5AC12C005932CD /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207E48602C5AC12C005932CD /* OptionsViewController.swift */; };
 		4D9C5420D2638E398484F560 /* Pods_MoneyTransferApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE3BFB9910F73879765D83C4 /* Pods_MoneyTransferApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		206CFFCF2C599520004209C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		206CFFDD2C5995E4004209C5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		207AC2AF2C5A83D300E4919C /* SecondRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondRegister.swift; sourceTree = "<group>"; };
+		207E485E2C5AC0FA005932CD /* OptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionTableViewCell.swift; sourceTree = "<group>"; };
+		207E48602C5AC12C005932CD /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		59DB13095C9A39EB645811DD /* Pods-MoneyTransferApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyTransferApp.debug.xcconfig"; path = "Target Support Files/Pods-MoneyTransferApp/Pods-MoneyTransferApp.debug.xcconfig"; sourceTree = "<group>"; };
 		EAD3C1595026F15403159707 /* Pods-MoneyTransferApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyTransferApp.release.xcconfig"; path = "Target Support Files/Pods-MoneyTransferApp/Pods-MoneyTransferApp.release.xcconfig"; sourceTree = "<group>"; };
 		FE3BFB9910F73879765D83C4 /* Pods_MoneyTransferApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyTransferApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +120,8 @@
 				200EFACD2C59AC8200DD7EC9 /* MainViewController.swift */,
 				200EFACF2C59AE6200DD7EC9 /* AccountViewController.swift */,
 				207AC2AF2C5A83D300E4919C /* SecondRegister.swift */,
+				207E485E2C5AC0FA005932CD /* OptionTableViewCell.swift */,
+				207E48602C5AC12C005932CD /* OptionsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -268,6 +274,8 @@
 				200EFAD02C59AE6200DD7EC9 /* AccountViewController.swift in Sources */,
 				200EFACE2C59AC8200DD7EC9 /* MainViewController.swift in Sources */,
 				206CFFC22C59951E004209C5 /* AppDelegate.swift in Sources */,
+				207E48612C5AC12C005932CD /* OptionsViewController.swift in Sources */,
+				207E485F2C5AC0FA005932CD /* OptionTableViewCell.swift in Sources */,
 				206CFFC42C59951E004209C5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

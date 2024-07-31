@@ -39,7 +39,7 @@ class LoginViewController: UIViewController {
         gradientLayer.frame = view.bounds
         gradientLayer.colors = [UIColor.white.cgColor, UIColor.red.cgColor] 
         gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.5)
-        gradientLayer.endPoint = CGPoint(x: 0.5, y: 8.0)
+        gradientLayer.endPoint = CGPoint(x: 0.5, y: 6.0)
         view.layer.insertSublayer(gradientLayer, at: 0)
     }
 }
