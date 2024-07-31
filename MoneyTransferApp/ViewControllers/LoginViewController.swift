@@ -18,7 +18,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        errorMessageLabel.isHidden = true
+        //errorMessageLabel.isHidden = true
     }
     
     @IBAction func loginButtonTapped(_ sender: UIButton) {
@@ -33,13 +33,6 @@ class LoginViewController: UIViewController {
             }
         }
     }
-    
-    @IBAction func registerButtonTapped(_ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let registerVC = storyboard.instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
-        self.present(registerVC, animated: true, completion: nil)
-    }
-    
     private func navigateToMain() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let mainVC = storyboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
