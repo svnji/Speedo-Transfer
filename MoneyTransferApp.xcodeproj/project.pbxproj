@@ -12,6 +12,10 @@
 		200EFACE2C59AC8200DD7EC9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200EFACD2C59AC8200DD7EC9 /* MainViewController.swift */; };
 		200EFAD02C59AE6200DD7EC9 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200EFACF2C59AE6200DD7EC9 /* AccountViewController.swift */; };
 		200EFAD42C59B0AB00DD7EC9 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200EFAD32C59B0AB00DD7EC9 /* Transaction.swift */; };
+		204643922C5C2A1F00204DE6 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204643912C5C2A1F00204DE6 /* FavoriteTableViewCell.swift */; };
+		204643942C5C2A3B00204DE6 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204643932C5C2A3B00204DE6 /* FavoritesViewController.swift */; };
+		206674182C5C0AC80070C5DD /* transferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206674172C5C0AC80070C5DD /* transferViewController.swift */; };
+		2066741A2C5C0C5B0070C5DD /* Borderders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206674192C5C0C5B0070C5DD /* Borderders.swift */; };
 		206CFFC22C59951E004209C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206CFFC12C59951E004209C5 /* AppDelegate.swift */; };
 		206CFFC42C59951E004209C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206CFFC32C59951E004209C5 /* SceneDelegate.swift */; };
 		206CFFC62C59951E004209C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206CFFC52C59951E004209C5 /* ViewController.swift */; };
@@ -34,6 +38,10 @@
 		200EFACD2C59AC8200DD7EC9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		200EFACF2C59AE6200DD7EC9 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		200EFAD32C59B0AB00DD7EC9 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		204643912C5C2A1F00204DE6 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
+		204643932C5C2A3B00204DE6 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		206674172C5C0AC80070C5DD /* transferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transferViewController.swift; sourceTree = "<group>"; };
+		206674192C5C0C5B0070C5DD /* Borderders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Borderders.swift; sourceTree = "<group>"; };
 		206CFFBE2C59951E004209C5 /* MoneyTransferApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyTransferApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		206CFFC12C59951E004209C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		206CFFC32C59951E004209C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +137,9 @@
 				207AC2AF2C5A83D300E4919C /* SecondRegister.swift */,
 				207E485E2C5AC0FA005932CD /* OptionTableViewCell.swift */,
 				207E48602C5AC12C005932CD /* OptionsViewController.swift */,
+				206674172C5C0AC80070C5DD /* transferViewController.swift */,
+				204643912C5C2A1F00204DE6 /* FavoriteTableViewCell.swift */,
+				204643932C5C2A3B00204DE6 /* FavoritesViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -155,6 +166,7 @@
 			children = (
 				7C66FC602C5BA07D00A70937 /* String+trimm.swift */,
 				7C66FC622C5BA0E300A70937 /* UIViewController+Alert.swift */,
+				206674192C5C0C5B0070C5DD /* Borderders.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -288,11 +300,15 @@
 				200EFAD42C59B0AB00DD7EC9 /* Transaction.swift in Sources */,
 				200EFACA2C59A22A00DD7EC9 /* RegisterViewController.swift in Sources */,
 				207AC2B02C5A83D300E4919C /* SecondRegister.swift in Sources */,
+				2066741A2C5C0C5B0070C5DD /* Borderders.swift in Sources */,
 				200EFACC2C59A6BB00DD7EC9 /* LoginViewController.swift in Sources */,
 				200EFAD02C59AE6200DD7EC9 /* AccountViewController.swift in Sources */,
 				7C66FC5E2C5B9C1D00A70937 /* Constants.swift in Sources */,
+				204643942C5C2A3B00204DE6 /* FavoritesViewController.swift in Sources */,
 				200EFACE2C59AC8200DD7EC9 /* MainViewController.swift in Sources */,
 				206CFFC22C59951E004209C5 /* AppDelegate.swift in Sources */,
+				206674182C5C0AC80070C5DD /* transferViewController.swift in Sources */,
+				204643922C5C2A1F00204DE6 /* FavoriteTableViewCell.swift in Sources */,
 				7C66FC612C5BA07D00A70937 /* String+trimm.swift in Sources */,
 				207E48612C5AC12C005932CD /* OptionsViewController.swift in Sources */,
 				207E485F2C5AC0FA005932CD /* OptionTableViewCell.swift in Sources */,

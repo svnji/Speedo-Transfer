@@ -31,34 +31,34 @@ class MainViewController: UIViewController {
     }
 }
 
-extension UIView {
-    @IBInspectable var borderColor: UIColor? {
-        get {
-            let color = UIColor(cgColor: layer.borderColor ?? UIColor.clear.cgColor)
-            return color
-        }
-        
-        set {
-            layer.borderColor = newValue?.cgColor
-        }
-    }
-    
-    @IBInspectable var borderWidth: CGFloat {
-        get {
-            return layer.borderWidth
-        }
-        set {
-            layer.borderWidth = newValue
-        }
-    }
-    
-    @IBInspectable var cornerRadius: CGFloat {
-        get {
-            return layer.cornerRadius
-        }
-        set {
-            layer.cornerRadius = newValue
-            layer.masksToBounds = newValue > 0
-        }
-    }
-}
+//extension UIView {
+//    @IBInspectable var borderColor: UIColor? {
+//        get {
+//            let color = UIColor(cgColor: layer.borderColor ?? UIColor.clear.cgColor)
+//            return color
+//        }
+//        
+//        set {
+//            layer.borderColor = newValue?.cgColor
+//        }
+//    }
+//    
+//    @IBInspectable var borderWidth: CGFloat {
+//        get {
+//            return layer.borderWidth
+//        }
+//        set {
+//            layer.borderWidth = newValue
+//        }
+//    }
+//    
+//    @IBInspectable var cornerRadius: CGFloat {
+//        get {
+//            return layer.cornerRadius
+//        }
+//        set {
+//            layer.cornerRadius = newValue
+//            layer.masksToBounds = newValue > 0
+//        }
+//    }
+//}
