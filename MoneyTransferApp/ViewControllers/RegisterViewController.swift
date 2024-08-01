@@ -26,15 +26,51 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func registerButtonTapped(_ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let secondRegisterVC = storyboard.instantiateViewController(withIdentifier: "SecondRegister") as! SecondRegister
-        self.present(secondRegisterVC, animated: true, completion: nil)
+        if isValidData() {
+            print("valid")
+            self.goToLoginScreen()
+                 }
+        
     }
-    
-//    private func navigateToSecondRegister() {
-//        self.present(SecondRegister(), animated: true)
-//    }
-    
+    private func goToLoginScreen (){
+        let sb = UIStoryboard(name: StoryBoards.main, bundle: nil)
+        let loginVC = sb.instantiateViewController(withIdentifier: VCs.login) as! LoginViewController
+        self.navigationController?.pushViewController(loginVC, animated: true)
+   
+    }
+    private func isValidData () -> Bool {
+       
+        guard nameTextField.text?.trimmed != "" else {
+            self.showAlert(title: "Sorry", message: "Please enter your name!")
+            return false
+        }	
+        //email
+        let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.com"
+        let emailPredicate = NSPredicate(format: "SELF MATCHES %@", emailRegex)
+
+        guard emailTextField.text?.trimmed != "" else {
+            self.showAlert(title: "Sorry", message: "Please enter your email!")
+            return false
+        }
+        guard emailPredicate.evaluate(with: emailTextField.text) else {
+              self.showAlert(title: "Sorry", message: "Please enter a valid email address!")
+              return false
+          }
+        //password
+        guard passwordTextField.text?.trimmed != "" else {
+            self.showAlert(title: "Sorry", message: "Please enter your password!")
+            return false
+        }
+        let passwordRegex =  "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).{8,}$"
+        let passwordPredicate = NSPredicate(format: "SELF MATCHES %@", passwordRegex)
+        guard passwordPredicate.evaluate(with: passwordTextField.text) else {
+            self.showAlert(title: "Sorry", message: "Password must be at least 8 characters long, with at least one uppercase letter, one lowercase letter, and one number.")
+            return false
+        }
+     return true
+    }
+
+
     private func setupGradientBackground() {
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = view.bounds
@@ -46,9 +82,5 @@ class RegisterViewController: UIViewController {
     private func setupNavigationBar() {
           // Set the title for the navigation bar
           self.title = "Sign Up"
-
-          
-          // Alternatively, you can use navigationItem
-          // self.navigationItem.title = "Register"
       }
 }
