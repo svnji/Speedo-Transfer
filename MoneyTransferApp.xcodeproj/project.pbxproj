@@ -23,7 +23,7 @@
 		206CFFCB2C599520004209C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 206CFFCA2C599520004209C5 /* Assets.xcassets */; };
 		206CFFCE2C599520004209C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 206CFFCC2C599520004209C5 /* LaunchScreen.storyboard */; };
 		206CFFDE2C5995E4004209C5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206CFFDD2C5995E4004209C5 /* User.swift */; };
-		207AC2B02C5A83D300E4919C /* SecondRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207AC2AF2C5A83D300E4919C /* SecondRegister.swift */; };
+		207AC2B02C5A83D300E4919C /* CompleteRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207AC2AF2C5A83D300E4919C /* CompleteRegister.swift */; };
 		207E485F2C5AC0FA005932CD /* OptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207E485E2C5AC0FA005932CD /* OptionTableViewCell.swift */; };
 		207E48612C5AC12C005932CD /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207E48602C5AC12C005932CD /* OptionsViewController.swift */; };
 		4D9C5420D2638E398484F560 /* Pods_MoneyTransferApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE3BFB9910F73879765D83C4 /* Pods_MoneyTransferApp.framework */; };
@@ -51,7 +51,7 @@
 		206CFFCD2C599520004209C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		206CFFCF2C599520004209C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		206CFFDD2C5995E4004209C5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		207AC2AF2C5A83D300E4919C /* SecondRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondRegister.swift; sourceTree = "<group>"; };
+		207AC2AF2C5A83D300E4919C /* CompleteRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteRegister.swift; sourceTree = "<group>"; };
 		207E485E2C5AC0FA005932CD /* OptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionTableViewCell.swift; sourceTree = "<group>"; };
 		207E48602C5AC12C005932CD /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		59DB13095C9A39EB645811DD /* Pods-MoneyTransferApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyTransferApp.debug.xcconfig"; path = "Target Support Files/Pods-MoneyTransferApp/Pods-MoneyTransferApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,11 +130,9 @@
 		206CFFD82C599543004209C5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				200EFAC92C59A22A00DD7EC9 /* RegisterViewController.swift */,
-				200EFACB2C59A6BB00DD7EC9 /* LoginViewController.swift */,
+				7C8175812C5CD67D00477F55 /* Authentication */,
 				200EFACD2C59AC8200DD7EC9 /* MainViewController.swift */,
 				200EFACF2C59AE6200DD7EC9 /* AccountViewController.swift */,
-				207AC2AF2C5A83D300E4919C /* SecondRegister.swift */,
 				207E485E2C5AC0FA005932CD /* OptionTableViewCell.swift */,
 				207E48602C5AC12C005932CD /* OptionsViewController.swift */,
 				206674172C5C0AC80070C5DD /* transferViewController.swift */,
@@ -169,6 +167,16 @@
 				206674192C5C0C5B0070C5DD /* Borderders.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7C8175812C5CD67D00477F55 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				200EFACB2C59A6BB00DD7EC9 /* LoginViewController.swift */,
+				200EFAC92C59A22A00DD7EC9 /* RegisterViewController.swift */,
+				207AC2AF2C5A83D300E4919C /* CompleteRegister.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		EA4852732DC88D05355BA868 /* Frameworks */ = {
@@ -299,7 +307,7 @@
 				206CFFC62C59951E004209C5 /* ViewController.swift in Sources */,
 				200EFAD42C59B0AB00DD7EC9 /* Transaction.swift in Sources */,
 				200EFACA2C59A22A00DD7EC9 /* RegisterViewController.swift in Sources */,
-				207AC2B02C5A83D300E4919C /* SecondRegister.swift in Sources */,
+				207AC2B02C5A83D300E4919C /* CompleteRegister.swift in Sources */,
 				2066741A2C5C0C5B0070C5DD /* Borderders.swift in Sources */,
 				200EFACC2C59A6BB00DD7EC9 /* LoginViewController.swift in Sources */,
 				200EFAD02C59AE6200DD7EC9 /* AccountViewController.swift in Sources */,

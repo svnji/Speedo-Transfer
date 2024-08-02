@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 import FittedSheets
-
 struct Favorite {
     let name: String
     let account: String

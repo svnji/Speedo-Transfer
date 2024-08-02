@@ -22,15 +22,29 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
         setupGradientBackground()
         setupNavigationBar()
+        self.navigationItem.hidesBackButton = true
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+
         // errorMessageLabel.isHidden = true
     }
     
+    @IBAction func navigateToSignIn(_ sender: Any) {
+        self.goToLoginScreen()
+    }
     @IBAction func registerButtonTapped(_ sender: UIButton) {
-        if isValidData() {
+//        isValidData()
+        if true {
             print("valid")
-            self.goToLoginScreen()
+            self.goToCompleteRegisterScreen()
+          
                  }
         
+    }
+    private func goToCompleteRegisterScreen (){
+        let sb = UIStoryboard(name: StoryBoards.main, bundle: nil)
+        let completeRegister = sb.instantiateViewController(withIdentifier: VCs.completeRegister) as! CompleteRegister
+        self.navigationController?.pushViewController(completeRegister, animated: true)
+   
     }
     private func goToLoginScreen (){
         let sb = UIStoryboard(name: StoryBoards.main, bundle: nil)

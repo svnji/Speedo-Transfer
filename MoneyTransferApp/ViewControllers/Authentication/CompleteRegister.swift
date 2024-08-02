@@ -1,9 +1,10 @@
 import UIKit
 import FittedSheets
 
-class SecondRegister: UIViewController, OptionsViewControllerDelegate {
+class CompleteRegister: UIViewController, OptionsViewControllerDelegate {
     
     @IBOutlet weak var countryTextField: UITextField!
+//    @IBOutlet weak var dateOfBirthTextField: UITextField!
     @IBOutlet weak var dateOfBirthTextField: UITextField!
     
     private let datePicker = UIDatePicker()
@@ -12,6 +13,9 @@ class SecondRegister: UIViewController, OptionsViewControllerDelegate {
         super.viewDidLoad()
         setupGradientBackground()
         setupDatePicker()
+        setupNavigationBar()
+      
+
         
         let countryTapGesture = UITapGestureRecognizer(target: self, action: #selector(showCountryOptions))
         countryTextField.addGestureRecognizer(countryTapGesture)
@@ -64,4 +68,18 @@ class SecondRegister: UIViewController, OptionsViewControllerDelegate {
     func didSelectOption(_ option: Option) {
         countryTextField.text = option.title
     }
+    //navigation
+    private func setupNavigationBar() {
+          // Set the title for the navigation bar
+          self.title = "Sign Up"
+        self.navigationController?.navigationBar.tintColor = UIColor.gray
+      }
+    
+    //buttons
+    @IBAction func submitRegisterBtnTapped(_ sender: Any) {
+        print("done")
+        // validate data
+        //go to home
+    }
+    
 }
