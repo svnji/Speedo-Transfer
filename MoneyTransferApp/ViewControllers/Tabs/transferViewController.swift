@@ -21,7 +21,8 @@ class transferViewController: UIViewController, FavoritesViewControllerDelegate 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupGradientBackground()
-        self.navigationItem.title = "Transfer"
+        setupNavigationBar()
+        
     }
     
     private func setupGradientBackground() {
@@ -52,4 +53,8 @@ class transferViewController: UIViewController, FavoritesViewControllerDelegate 
         recipientNameTextField.text = favorite.name
         recipientAccountTextField.text = favorite.account
     }
+    private func setupNavigationBar() {
+          // Set the title for the navigation bar
+          self.title = "Transfer"
+      }
 }

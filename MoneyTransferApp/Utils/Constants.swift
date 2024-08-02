@@ -19,7 +19,7 @@ struct StoryBoards {
 struct VCs {
     static let login = "LoginViewController"
     static let regiseration = "RegisterViewController"
-    static let secondRegister = "SecondRegister"
+    static let completeRegister = "CompleteRegister"
  
 
 }
