@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F8h-5q-dou">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Xr-db-zew">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -397,14 +397,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J9Q-fX-3Mq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="REU-jC-rfu" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4147.826086956522" y="-27.455357142857142"/>
+            <point key="canvasLocation" x="3446" y="-28"/>
         </scene>
         <!--Transfer View Controller-->
         <scene sceneID="gec-4a-BJs">
             <objects>
                 <viewController storyboardIdentifier="transferViewController" id="2Xr-db-zew" customClass="transferViewController" customModule="MoneyTransferApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JAX-Wi-01U">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cv9-T1-MvF">
@@ -718,7 +718,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="5oF-ZS-16C"/>
-                    <size key="freeformSize" width="414" height="1500"/>
                     <connections>
                         <outlet property="recipientAccountTextField" destination="aww-bo-KZu" id="4d9-1B-R4W"/>
                         <outlet property="recipientNameTextField" destination="m0l-aF-ohe" id="xKU-tN-daA"/>
@@ -729,12 +728,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Acy-SG-fKY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5969.5652173913049" y="838.39285714285711"/>
+            <point key="canvasLocation" x="5161" y="741"/>
         </scene>
         <!--Home-->
         <scene sceneID="5e1-h4-WRL">
             <objects>
-                <viewController storyboardIdentifier="MainViewController" id="v5r-zG-0kL" customClass="MainViewController" customModule="MoneyTransferApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="v5r-zG-0kL" customClass="HomeViewController" customModule="MoneyTransferApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5eV-Lp-tGC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1070,7 +1069,12 @@
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <connections>
-                        <outlet property="mainView" destination="kiv-z4-E6s" id="hAr-Hj-hOq"/>
+                        <outlet property="currentBalance" destination="zgG-tS-C7n" id="H9F-Xy-QMx"/>
+                        <outlet property="mainView" destination="kiv-z4-E6s" id="UeM-lg-ISZ"/>
+                        <outlet property="recentTransactionDateAndStatus1" destination="xTW-VN-lcZ" id="VTt-xO-Icw"/>
+                        <outlet property="recentTransactionMasterCard1" destination="u4w-mc-Tiy" id="vDn-8R-Rnb"/>
+                        <outlet property="recentTransactionName1" destination="iBJ-AU-rJY" id="XT0-fT-d8L"/>
+                        <outlet property="recentTransactionValue1" destination="Xab-4z-ZCS" id="YYP-4V-Gnf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Nb-Yc-Gq3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1093,7 +1097,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="v5r-zG-0kL" kind="relationship" relationship="viewControllers" id="fV2-zP-EQC"/>
-                        <segue destination="eYC-WL-Dcw" kind="relationship" relationship="viewControllers" id="dy4-jf-X45"/>
                         <segue destination="uJf-V4-95B" kind="relationship" relationship="viewControllers" id="rFr-ya-1Sz"/>
                     </connections>
                 </tabBarController>
@@ -1134,25 +1137,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nwx-5w-Yi9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="815.94202898550736" y="-27.455357142857142"/>
-        </scene>
-        <!--Transfer-->
-        <scene sceneID="Vjn-Kw-MHB">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eYC-WL-Dcw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Transfer" image="Transfer 2" id="6d1-j1-AJD"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uQD-RZ-iHt">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="2Xr-db-zew" kind="relationship" relationship="rootViewController" id="BmO-aT-u5y"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4t4-QF-Frq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5059.420289855073" y="838.39285714285711"/>
         </scene>
     </scenes>
     <resources>

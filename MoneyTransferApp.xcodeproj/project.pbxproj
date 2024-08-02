@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		200EFACA2C59A22A00DD7EC9 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200EFAC92C59A22A00DD7EC9 /* RegisterViewController.swift */; };
 		200EFACC2C59A6BB00DD7EC9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200EFACB2C59A6BB00DD7EC9 /* LoginViewController.swift */; };
-		200EFACE2C59AC8200DD7EC9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200EFACD2C59AC8200DD7EC9 /* MainViewController.swift */; };
-		200EFAD02C59AE6200DD7EC9 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200EFACF2C59AE6200DD7EC9 /* AccountViewController.swift */; };
+		200EFACE2C59AC8200DD7EC9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200EFACD2C59AC8200DD7EC9 /* HomeViewController.swift */; };
 		200EFAD42C59B0AB00DD7EC9 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200EFAD32C59B0AB00DD7EC9 /* Transaction.swift */; };
 		204643922C5C2A1F00204DE6 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204643912C5C2A1F00204DE6 /* FavoriteTableViewCell.swift */; };
 		204643942C5C2A3B00204DE6 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204643932C5C2A3B00204DE6 /* FavoritesViewController.swift */; };
@@ -35,8 +34,7 @@
 /* Begin PBXFileReference section */
 		200EFAC92C59A22A00DD7EC9 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		200EFACB2C59A6BB00DD7EC9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		200EFACD2C59AC8200DD7EC9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		200EFACF2C59AE6200DD7EC9 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		200EFACD2C59AC8200DD7EC9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		200EFAD32C59B0AB00DD7EC9 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		204643912C5C2A1F00204DE6 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		204643932C5C2A3B00204DE6 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
@@ -98,7 +96,6 @@
 				7C66FC5F2C5BA03900A70937 /* Extensions */,
 				7C66FC5C2C5B9C0800A70937 /* Utils */,
 				206CFFD82C599543004209C5 /* ViewControllers */,
-				206CFFD72C599539004209C5 /* Views */,
 				206CFFD62C599532004209C5 /* Models */,
 				206CFFC12C59951E004209C5 /* AppDelegate.swift */,
 				206CFFC32C59951E004209C5 /* SceneDelegate.swift */,
@@ -120,24 +117,12 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		206CFFD72C599539004209C5 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		206CFFD82C599543004209C5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				7C8175842C5D0C5200477F55 /* OptionFiled */,
+				7C8175822C5CE03900477F55 /* Tabs */,
 				7C8175812C5CD67D00477F55 /* Authentication */,
-				200EFACD2C59AC8200DD7EC9 /* MainViewController.swift */,
-				200EFACF2C59AE6200DD7EC9 /* AccountViewController.swift */,
-				207E485E2C5AC0FA005932CD /* OptionTableViewCell.swift */,
-				207E48602C5AC12C005932CD /* OptionsViewController.swift */,
-				206674172C5C0AC80070C5DD /* transferViewController.swift */,
-				204643912C5C2A1F00204DE6 /* FavoriteTableViewCell.swift */,
-				204643932C5C2A3B00204DE6 /* FavoritesViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -177,6 +162,42 @@
 				207AC2AF2C5A83D300E4919C /* CompleteRegister.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		7C8175822C5CE03900477F55 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				206674172C5C0AC80070C5DD /* transferViewController.swift */,
+				200EFACD2C59AC8200DD7EC9 /* HomeViewController.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		7C8175832C5D088000477F55 /* CountrySheet */ = {
+			isa = PBXGroup;
+			children = (
+				207E485E2C5AC0FA005932CD /* OptionTableViewCell.swift */,
+				207E48602C5AC12C005932CD /* OptionsViewController.swift */,
+			);
+			path = CountrySheet;
+			sourceTree = "<group>";
+		};
+		7C8175842C5D0C5200477F55 /* OptionFiled */ = {
+			isa = PBXGroup;
+			children = (
+				7C8175852C5D0C9B00477F55 /* FavSheet */,
+				7C8175832C5D088000477F55 /* CountrySheet */,
+			);
+			path = OptionFiled;
+			sourceTree = "<group>";
+		};
+		7C8175852C5D0C9B00477F55 /* FavSheet */ = {
+			isa = PBXGroup;
+			children = (
+				204643932C5C2A3B00204DE6 /* FavoritesViewController.swift */,
+				204643912C5C2A1F00204DE6 /* FavoriteTableViewCell.swift */,
+			);
+			path = FavSheet;
 			sourceTree = "<group>";
 		};
 		EA4852732DC88D05355BA868 /* Frameworks */ = {
@@ -310,10 +331,9 @@
 				207AC2B02C5A83D300E4919C /* CompleteRegister.swift in Sources */,
 				2066741A2C5C0C5B0070C5DD /* Borderders.swift in Sources */,
 				200EFACC2C59A6BB00DD7EC9 /* LoginViewController.swift in Sources */,
-				200EFAD02C59AE6200DD7EC9 /* AccountViewController.swift in Sources */,
 				7C66FC5E2C5B9C1D00A70937 /* Constants.swift in Sources */,
 				204643942C5C2A3B00204DE6 /* FavoritesViewController.swift in Sources */,
-				200EFACE2C59AC8200DD7EC9 /* MainViewController.swift in Sources */,
+				200EFACE2C59AC8200DD7EC9 /* HomeViewController.swift in Sources */,
 				206CFFC22C59951E004209C5 /* AppDelegate.swift in Sources */,
 				206674182C5C0AC80070C5DD /* transferViewController.swift in Sources */,
 				204643922C5C2A1F00204DE6 /* FavoriteTableViewCell.swift in Sources */,

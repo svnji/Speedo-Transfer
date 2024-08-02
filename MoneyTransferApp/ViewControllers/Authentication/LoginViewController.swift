@@ -27,9 +27,9 @@ class LoginViewController: UIViewController {
         self.goToSignUpcreen()
     }
     @IBAction func loginButtonTapped(_ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let mainVC = storyboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
-        self.present(mainVC, animated: true, completion: nil)
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let mainVC = storyboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+//        self.present(mainVC, animated: true, completion: nil)
     }
     
 //    private func navigateToMain() {
