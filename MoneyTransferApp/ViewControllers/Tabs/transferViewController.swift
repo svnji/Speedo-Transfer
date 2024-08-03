@@ -8,8 +8,7 @@
 import Foundation
 import UIKit
 import FittedSheets
-
-class transferViewController: UIViewController, FavoritesViewControllerDelegate {
+class TransferViewController: UIViewController, FavoritesViewControllerDelegate {
     
     @IBOutlet weak var recipientTextField: UITextField!
     @IBOutlet weak var sendTextField: UITextField!
@@ -20,7 +19,7 @@ class transferViewController: UIViewController, FavoritesViewControllerDelegate 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupGradientBackground()
+//        setupGradientBackground()
         setupNavigationBar()
         
     }

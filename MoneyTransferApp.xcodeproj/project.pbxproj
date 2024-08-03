@@ -15,7 +15,7 @@
 		2014819A2C5D2770004E6331 /* secoundTransactionConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201481992C5D276F004E6331 /* secoundTransactionConfirmationViewController.swift */; };
 		204643922C5C2A1F00204DE6 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204643912C5C2A1F00204DE6 /* FavoriteTableViewCell.swift */; };
 		204643942C5C2A3B00204DE6 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204643932C5C2A3B00204DE6 /* FavoritesViewController.swift */; };
-		206674182C5C0AC80070C5DD /* transferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206674172C5C0AC80070C5DD /* transferViewController.swift */; };
+		206674182C5C0AC80070C5DD /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206674172C5C0AC80070C5DD /* TransferViewController.swift */; };
 		2066741A2C5C0C5B0070C5DD /* Borderders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206674192C5C0C5B0070C5DD /* Borderders.swift */; };
 		206CFFC22C59951E004209C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206CFFC12C59951E004209C5 /* AppDelegate.swift */; };
 		206CFFC62C59951E004209C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206CFFC52C59951E004209C5 /* ViewController.swift */; };
@@ -31,6 +31,10 @@
 		7C66FC5E2C5B9C1D00A70937 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C66FC5D2C5B9C1D00A70937 /* Constants.swift */; };
 		7C66FC612C5BA07D00A70937 /* String+trimm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C66FC602C5BA07D00A70937 /* String+trimm.swift */; };
 		7C66FC632C5BA0E300A70937 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C66FC622C5BA0E300A70937 /* UIViewController+Alert.swift */; };
+		7CF29D1D2C5EAEAE00EB1DEA /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF29D1C2C5EAEAD00EB1DEA /* CustomTabBarController.swift */; };
+		7CF29D1F2C5EAF4D00EB1DEA /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF29D1E2C5EAF4D00EB1DEA /* TransactionsViewController.swift */; };
+		7CF29D212C5EAF8400EB1DEA /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF29D202C5EAF8400EB1DEA /* CardsViewController.swift */; };
+		7CF29D232C5EAFC300EB1DEA /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF29D222C5EAFC300EB1DEA /* MoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +46,7 @@
 		201481992C5D276F004E6331 /* secoundTransactionConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secoundTransactionConfirmationViewController.swift; sourceTree = "<group>"; };
 		204643912C5C2A1F00204DE6 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		204643932C5C2A3B00204DE6 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
-		206674172C5C0AC80070C5DD /* transferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transferViewController.swift; sourceTree = "<group>"; };
+		206674172C5C0AC80070C5DD /* TransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
 		206674192C5C0C5B0070C5DD /* Borderders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Borderders.swift; sourceTree = "<group>"; };
 		206CFFBE2C59951E004209C5 /* MoneyTransferApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyTransferApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		206CFFC12C59951E004209C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +64,10 @@
 		7C66FC5D2C5B9C1D00A70937 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7C66FC602C5BA07D00A70937 /* String+trimm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+trimm.swift"; sourceTree = "<group>"; };
 		7C66FC622C5BA0E300A70937 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		7CF29D1C2C5EAEAD00EB1DEA /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		7CF29D1E2C5EAF4D00EB1DEA /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
+		7CF29D202C5EAF8400EB1DEA /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		7CF29D222C5EAFC300EB1DEA /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		EAD3C1595026F15403159707 /* Pods-MoneyTransferApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyTransferApp.release.xcconfig"; path = "Target Support Files/Pods-MoneyTransferApp/Pods-MoneyTransferApp.release.xcconfig"; sourceTree = "<group>"; };
 		FE3BFB9910F73879765D83C4 /* Pods_MoneyTransferApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyTransferApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -171,10 +179,14 @@
 		7C8175822C5CE03900477F55 /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
-				206674172C5C0AC80070C5DD /* transferViewController.swift */,
+				206674172C5C0AC80070C5DD /* TransferViewController.swift */,
 				200EFACD2C59AC8200DD7EC9 /* HomeViewController.swift */,
 				201481972C5D22CF004E6331 /* firstTransferConfirmationViewController.swift */,
 				201481992C5D276F004E6331 /* secoundTransactionConfirmationViewController.swift */,
+				7CF29D1C2C5EAEAD00EB1DEA /* CustomTabBarController.swift */,
+				7CF29D1E2C5EAF4D00EB1DEA /* TransactionsViewController.swift */,
+				7CF29D202C5EAF8400EB1DEA /* CardsViewController.swift */,
+				7CF29D222C5EAFC300EB1DEA /* MoreViewController.swift */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";
@@ -337,16 +349,20 @@
 				200EFACA2C59A22A00DD7EC9 /* RegisterViewController.swift in Sources */,
 				207AC2B02C5A83D300E4919C /* CompleteRegister.swift in Sources */,
 				2066741A2C5C0C5B0070C5DD /* Borderders.swift in Sources */,
+				7CF29D1D2C5EAEAE00EB1DEA /* CustomTabBarController.swift in Sources */,
 				200EFACC2C59A6BB00DD7EC9 /* LoginViewController.swift in Sources */,
 				7C66FC5E2C5B9C1D00A70937 /* Constants.swift in Sources */,
+				7CF29D212C5EAF8400EB1DEA /* CardsViewController.swift in Sources */,
 				204643942C5C2A3B00204DE6 /* FavoritesViewController.swift in Sources */,
 				200EFACE2C59AC8200DD7EC9 /* HomeViewController.swift in Sources */,
 				206CFFC22C59951E004209C5 /* AppDelegate.swift in Sources */,
-				206674182C5C0AC80070C5DD /* transferViewController.swift in Sources */,
+				7CF29D1F2C5EAF4D00EB1DEA /* TransactionsViewController.swift in Sources */,
+				206674182C5C0AC80070C5DD /* TransferViewController.swift in Sources */,
 				204643922C5C2A1F00204DE6 /* FavoriteTableViewCell.swift in Sources */,
 				209760762C5D2CC2008ECEBC /* SceneDelegate.swift in Sources */,
 				7C66FC612C5BA07D00A70937 /* String+trimm.swift in Sources */,
 				207E48612C5AC12C005932CD /* OptionsViewController.swift in Sources */,
+				7CF29D232C5EAFC300EB1DEA /* MoreViewController.swift in Sources */,
 				201481982C5D22CF004E6331 /* firstTransferConfirmationViewController.swift in Sources */,
 				207E485F2C5AC0FA005932CD /* OptionTableViewCell.swift in Sources */,
 			);

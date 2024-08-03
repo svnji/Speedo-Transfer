@@ -27,9 +27,7 @@ class LoginViewController: UIViewController {
         self.goToSignUpcreen()
     }
     @IBAction func loginButtonTapped(_ sender: UIButton) {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let mainVC = storyboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
-//        self.present(mainVC, animated: true, completion: nil)
+        navigateToMain()
     }
     
 //    private func navigateToMain() {
@@ -55,4 +53,19 @@ class LoginViewController: UIViewController {
         let registerViewController = sb.instantiateViewController(withIdentifier: VCs.regiseration) as! RegisterViewController
         self.navigationController?.pushViewController(registerViewController, animated: true)
     }
+    private func navigateToMain() {
+          // Assuming CustomTabBarController is defined in your storyboard
+          let storyboard = UIStoryboard(name: "Main", bundle: nil)
+          if let tabBarController = storyboard.instantiateViewController(withIdentifier: "CustomTabBarController") as? CustomTabBarController {
+              // Set the CustomTabBarController as the root view controller
+              if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                 let sceneDelegate = windowScene.delegate as? SceneDelegate,
+                 let window = sceneDelegate.window {
+                  window.rootViewController = tabBarController
+                  window.makeKeyAndVisible()
+              } else {
+                  self.present(tabBarController, animated: true, completion: nil)
+              }
+          }
+      }
 }

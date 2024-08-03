@@ -8,8 +8,8 @@
 import Foundation
 
 struct Transaction: Codable {
-    var id: String
     var recipientName: String
-    var amount: Double
+    var MasterCardId: String
+    var amount: String
     var date: String
 }
