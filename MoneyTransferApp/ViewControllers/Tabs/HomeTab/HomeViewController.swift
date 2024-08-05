@@ -60,5 +60,41 @@ class HomeViewController: UIViewController {
         recentTransactionName1.text = transaction1.recipientName
         
     }
+    @IBAction func transferBtnTapped(_ sender: Any) {
+        self.goToFirstTransferScreen()
+    }
+    @IBAction func transactionsBtnTapped(_ sender: Any) {
+        self.goToTransactionsScreen ()
+    }
+    @IBAction func cardsBtnTapped(_ sender: Any) {
+        self.goCardsScreen ()
+    }
+    @IBAction func accountBTnTapped(_ sender: Any) {
+        self.goAccountScreen ()
+    }
+    private func goToFirstTransferScreen (){
+        let sb = UIStoryboard(name: StoryBoards.main, bundle: nil)
+        let firstTransferViewController = sb.instantiateViewController(withIdentifier: VCs.firstTransferViewController) as! FirstTransferViewController
+        self.navigationController?.pushViewController(firstTransferViewController, animated: true)
+   
+    }
+    private func goToTransactionsScreen (){
+        let sb = UIStoryboard(name: StoryBoards.main, bundle: nil)
+        let transactionsVC = sb.instantiateViewController(withIdentifier: VCs.transactionDetailsViewController) as! transactionDetailsViewController
+        self.navigationController?.pushViewController(transactionsVC, animated: true)
+   
+    }
+    private func goCardsScreen (){
+        let sb = UIStoryboard(name: StoryBoards.main, bundle: nil)
+        let cardsVC = sb.instantiateViewController(withIdentifier: VCs.CardsViewController) as! CardsViewController
+        self.navigationController?.pushViewController(cardsVC, animated: true)
+   
+    }
+    private func goAccountScreen (){
+        let sb = UIStoryboard(name: StoryBoards.main, bundle: nil)
+        let accountVC = sb.instantiateViewController(withIdentifier: VCs.ProfileViewController) as! ProfileViewController
+        self.navigationController?.pushViewController(accountVC, animated: true)
+   
+    }
 }
 
