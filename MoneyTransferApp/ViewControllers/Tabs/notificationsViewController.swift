@@ -1,28 +1,24 @@
 //
-//  TransactionsViewController.swift
+//  notificationsViewController.swift
 //  MoneyTransferApp
 //
-//  Created by 1234 on 03/08/2024.
+//  Created by Daddy on 05/08/2024.
 //
 
 import UIKit
 
-class TransactionsViewController: UIViewController {
-    @IBOutlet weak var transactionView: UIView!
-    @IBOutlet weak var transactionName: UIView!
-    @IBOutlet weak var transactionBankAccount: UIView!
-    @IBOutlet weak var transactionTime: UIView!
-    @IBOutlet weak var transactionState: UIView!
-    
+class notificationsViewController: UIViewController {
+
+    @IBOutlet weak var notificaionView: UIView!
     override func viewDidLoad() {
-           super.viewDidLoad()
+        super.viewDidLoad()
         setupGradientBackground()
     }
     
 
     private func setupGradientBackground() {
         let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = transactionView.bounds
+        gradientLayer.frame = notificaionView.bounds
         if let TransferViewColor = UIColor(named: "MainViewColor") {
             gradientLayer.colors = [TransferViewColor.cgColor, UIColor.red.cgColor]
         } else {
@@ -30,6 +26,7 @@ class TransactionsViewController: UIViewController {
         }
         gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.0)
         gradientLayer.endPoint = CGPoint(x: 0.5, y: 10.0)
-        transactionView.layer.insertSublayer(gradientLayer, at: 0)
+        notificaionView.layer.insertSublayer(gradientLayer, at: 0)
     }
+
 }
