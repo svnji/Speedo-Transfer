@@ -6,6 +6,7 @@ class MoreViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupGradientBackground()
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
 
     }
     private func setupGradientBackground() {
@@ -23,6 +24,9 @@ class MoreViewController: UIViewController {
     @IBAction func transferFromWebsiteBtnTapped(_ sender: Any) {
     }
     @IBAction func favouritesBtnTapped(_ sender: Any) {
+        let sb = UIStoryboard(name: StoryBoards.main, bundle: nil)
+        let favouritViewController = sb.instantiateViewController(withIdentifier: VCs.favouritViewController) as! FavouritViewController
+        self.navigationController?.pushViewController(favouritViewController, animated: true)
     }
     @IBAction func profileBtnTapped(_ sender: Any) {
     }

@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 
-class secoundTransferConfirmationViewController: UIViewController {
+class SecoundTransactionConfirmationViewController: UIViewController {
 
  
     @IBOutlet weak var secondTransferConfirmationView: UIView!
@@ -37,6 +37,14 @@ class secoundTransferConfirmationViewController: UIViewController {
         secondTransferConfirmationView.layer.insertSublayer(gradientLayer, at: 0)
     }
     @IBAction func backToHomeBtnTapped(_ sender: Any) {
+        if let tabBarController = self.tabBarController {
+               // Reset the Transfer tab to its initial state
+               if let transferNavController = tabBarController.viewControllers?[1] as? UINavigationController {
+                   transferNavController.popToRootViewController(animated: false)
+               }
+               // Switch to the Home tab
+               tabBarController.selectedIndex = 0
+           }
     }
     @IBAction func addToFavouriteBtnTapped(_ sender: Any) {
     }

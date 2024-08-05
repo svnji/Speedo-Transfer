@@ -11,8 +11,8 @@
 		200EFACC2C59A6BB00DD7EC9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200EFACB2C59A6BB00DD7EC9 /* LoginViewController.swift */; };
 		200EFACE2C59AC8200DD7EC9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200EFACD2C59AC8200DD7EC9 /* HomeViewController.swift */; };
 		200EFAD42C59B0AB00DD7EC9 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200EFAD32C59B0AB00DD7EC9 /* Transaction.swift */; };
-		201481982C5D22CF004E6331 /* firstTransferConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201481972C5D22CF004E6331 /* firstTransferConfirmationViewController.swift */; };
-		2014819A2C5D2770004E6331 /* secoundTransactionConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201481992C5D276F004E6331 /* secoundTransactionConfirmationViewController.swift */; };
+		201481982C5D22CF004E6331 /* FirstTransferConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201481972C5D22CF004E6331 /* FirstTransferConfirmationViewController.swift */; };
+		2014819A2C5D2770004E6331 /* SecoundTransactionConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201481992C5D276F004E6331 /* SecoundTransactionConfirmationViewController.swift */; };
 		204643922C5C2A1F00204DE6 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204643912C5C2A1F00204DE6 /* FavoriteTableViewCell.swift */; };
 		204643942C5C2A3B00204DE6 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204643932C5C2A3B00204DE6 /* FavoritesViewController.swift */; };
 		206674182C5C0AC80070C5DD /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206674172C5C0AC80070C5DD /* TransferViewController.swift */; };
@@ -26,13 +26,13 @@
 		207AC2B02C5A83D300E4919C /* CompleteRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207AC2AF2C5A83D300E4919C /* CompleteRegister.swift */; };
 		207E485F2C5AC0FA005932CD /* OptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207E485E2C5AC0FA005932CD /* OptionTableViewCell.swift */; };
 		207E48612C5AC12C005932CD /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207E48602C5AC12C005932CD /* OptionsViewController.swift */; };
-		207E673D2C5EEB690005A73D /* favouriteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207E673C2C5EEB690005A73D /* favouriteListViewController.swift */; };
+		207E673D2C5EEB690005A73D /* FavouritViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207E673C2C5EEB690005A73D /* FavouritViewController.swift */; };
 		209760762C5D2CC2008ECEBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209760752C5D2CC2008ECEBC /* SceneDelegate.swift */; };
 		20C50F742C601704003DC8B2 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C50F732C601704003DC8B2 /* SettingViewController.swift */; };
-		20C50F762C601820003DC8B2 /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C50F752C601820003DC8B2 /* profileViewController.swift */; };
-		20C50F782C6018C7003DC8B2 /* profileInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C50F772C6018C7003DC8B2 /* profileInformationViewController.swift */; };
-		20C50F7A2C601B6C003DC8B2 /* editProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C50F792C601B6C003DC8B2 /* editProfileViewController.swift */; };
-		20C50F7C2C601C03003DC8B2 /* changePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C50F7B2C601C03003DC8B2 /* changePasswordViewController.swift */; };
+		20C50F762C601820003DC8B2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C50F752C601820003DC8B2 /* ProfileViewController.swift */; };
+		20C50F782C6018C7003DC8B2 /* ProfileInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C50F772C6018C7003DC8B2 /* ProfileInformationViewController.swift */; };
+		20C50F7A2C601B6C003DC8B2 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C50F792C601B6C003DC8B2 /* EditProfileViewController.swift */; };
+		20C50F7C2C601C03003DC8B2 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C50F7B2C601C03003DC8B2 /* ChangePasswordViewController.swift */; };
 		20F8172B2C604F00006F7BA3 /* transactionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F8172A2C604F00006F7BA3 /* transactionDetailsViewController.swift */; };
 		20F8172D2C605379006F7BA3 /* notificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F8172C2C605379006F7BA3 /* notificationsViewController.swift */; };
 		20F8172F2C605420006F7BA3 /* successfulTransactoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F8172E2C605420006F7BA3 /* successfulTransactoinViewController.swift */; };
@@ -51,8 +51,8 @@
 		200EFACB2C59A6BB00DD7EC9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		200EFACD2C59AC8200DD7EC9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		200EFAD32C59B0AB00DD7EC9 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
-		201481972C5D22CF004E6331 /* firstTransferConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstTransferConfirmationViewController.swift; sourceTree = "<group>"; };
-		201481992C5D276F004E6331 /* secoundTransactionConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secoundTransactionConfirmationViewController.swift; sourceTree = "<group>"; };
+		201481972C5D22CF004E6331 /* FirstTransferConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTransferConfirmationViewController.swift; sourceTree = "<group>"; };
+		201481992C5D276F004E6331 /* SecoundTransactionConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecoundTransactionConfirmationViewController.swift; sourceTree = "<group>"; };
 		204643912C5C2A1F00204DE6 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		204643932C5C2A3B00204DE6 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		206674172C5C0AC80070C5DD /* TransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
@@ -68,13 +68,13 @@
 		207AC2AF2C5A83D300E4919C /* CompleteRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteRegister.swift; sourceTree = "<group>"; };
 		207E485E2C5AC0FA005932CD /* OptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionTableViewCell.swift; sourceTree = "<group>"; };
 		207E48602C5AC12C005932CD /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
-		207E673C2C5EEB690005A73D /* favouriteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favouriteListViewController.swift; sourceTree = "<group>"; };
+		207E673C2C5EEB690005A73D /* FavouritViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritViewController.swift; sourceTree = "<group>"; };
 		209760752C5D2CC2008ECEBC /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		20C50F732C601704003DC8B2 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
-		20C50F752C601820003DC8B2 /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
-		20C50F772C6018C7003DC8B2 /* profileInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileInformationViewController.swift; sourceTree = "<group>"; };
-		20C50F792C601B6C003DC8B2 /* editProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editProfileViewController.swift; sourceTree = "<group>"; };
-		20C50F7B2C601C03003DC8B2 /* changePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = changePasswordViewController.swift; sourceTree = "<group>"; };
+		20C50F752C601820003DC8B2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		20C50F772C6018C7003DC8B2 /* ProfileInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInformationViewController.swift; sourceTree = "<group>"; };
+		20C50F792C601B6C003DC8B2 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		20C50F7B2C601C03003DC8B2 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		20F8172A2C604F00006F7BA3 /* transactionDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transactionDetailsViewController.swift; sourceTree = "<group>"; };
 		20F8172C2C605379006F7BA3 /* notificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationsViewController.swift; sourceTree = "<group>"; };
 		20F8172E2C605420006F7BA3 /* successfulTransactoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = successfulTransactoinViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +166,73 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		7C16FF6B2C611E4F00F77998 /* TranferTab */ = {
+			isa = PBXGroup;
+			children = (
+				206674172C5C0AC80070C5DD /* TransferViewController.swift */,
+				201481972C5D22CF004E6331 /* FirstTransferConfirmationViewController.swift */,
+				201481992C5D276F004E6331 /* SecoundTransactionConfirmationViewController.swift */,
+			);
+			path = TranferTab;
+			sourceTree = "<group>";
+		};
+		7C16FF6C2C61210000F77998 /* HomeTab */ = {
+			isa = PBXGroup;
+			children = (
+				200EFACD2C59AC8200DD7EC9 /* HomeViewController.swift */,
+			);
+			path = HomeTab;
+			sourceTree = "<group>";
+		};
+		7C16FF6D2C61211B00F77998 /* CustomTabVC */ = {
+			isa = PBXGroup;
+			children = (
+				7CF29D1C2C5EAEAD00EB1DEA /* CustomTabBarController.swift */,
+			);
+			path = CustomTabVC;
+			sourceTree = "<group>";
+		};
+		7C16FF6E2C61254A00F77998 /* temp */ = {
+			isa = PBXGroup;
+			children = (
+				20F8172A2C604F00006F7BA3 /* transactionDetailsViewController.swift */,
+				7CF29D202C5EAF8400EB1DEA /* CardsViewController.swift */,
+				20F8172C2C605379006F7BA3 /* notificationsViewController.swift */,
+				20F8172E2C605420006F7BA3 /* successfulTransactoinViewController.swift */,
+			);
+			path = temp;
+			sourceTree = "<group>";
+		};
+		7C16FF6F2C61259100F77998 /* TransactionTab */ = {
+			isa = PBXGroup;
+			children = (
+				7CF29D1E2C5EAF4D00EB1DEA /* TransactionsViewController.swift */,
+			);
+			path = TransactionTab;
+			sourceTree = "<group>";
+		};
+		7C16FF702C61514E00F77998 /* MoreTab */ = {
+			isa = PBXGroup;
+			children = (
+				7C16FF712C61523E00F77998 /* profile */,
+				7CF29D222C5EAFC300EB1DEA /* MoreViewController.swift */,
+				207E673C2C5EEB690005A73D /* FavouritViewController.swift */,
+			);
+			path = MoreTab;
+			sourceTree = "<group>";
+		};
+		7C16FF712C61523E00F77998 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				20C50F752C601820003DC8B2 /* ProfileViewController.swift */,
+				20C50F772C6018C7003DC8B2 /* ProfileInformationViewController.swift */,
+				20C50F732C601704003DC8B2 /* SettingViewController.swift */,
+				20C50F792C601B6C003DC8B2 /* EditProfileViewController.swift */,
+				20C50F7B2C601C03003DC8B2 /* ChangePasswordViewController.swift */,
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
 		7C66FC5C2C5B9C0800A70937 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,23 +264,12 @@
 		7C8175822C5CE03900477F55 /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
-				206674172C5C0AC80070C5DD /* TransferViewController.swift */,
-				200EFACD2C59AC8200DD7EC9 /* HomeViewController.swift */,
-				201481972C5D22CF004E6331 /* firstTransferConfirmationViewController.swift */,
-				201481992C5D276F004E6331 /* secoundTransactionConfirmationViewController.swift */,
-				7CF29D1C2C5EAEAD00EB1DEA /* CustomTabBarController.swift */,
-				7CF29D1E2C5EAF4D00EB1DEA /* TransactionsViewController.swift */,
-				7CF29D202C5EAF8400EB1DEA /* CardsViewController.swift */,
-				7CF29D222C5EAFC300EB1DEA /* MoreViewController.swift */,
-				207E673C2C5EEB690005A73D /* favouriteListViewController.swift */,
-				20C50F732C601704003DC8B2 /* SettingViewController.swift */,
-				20C50F752C601820003DC8B2 /* profileViewController.swift */,
-				20C50F772C6018C7003DC8B2 /* profileInformationViewController.swift */,
-				20C50F792C601B6C003DC8B2 /* editProfileViewController.swift */,
-				20C50F7B2C601C03003DC8B2 /* changePasswordViewController.swift */,
-				20F8172A2C604F00006F7BA3 /* transactionDetailsViewController.swift */,
-				20F8172C2C605379006F7BA3 /* notificationsViewController.swift */,
-				20F8172E2C605420006F7BA3 /* successfulTransactoinViewController.swift */,
+				7C16FF702C61514E00F77998 /* MoreTab */,
+				7C16FF6F2C61259100F77998 /* TransactionTab */,
+				7C16FF6E2C61254A00F77998 /* temp */,
+				7C16FF6D2C61211B00F77998 /* CustomTabVC */,
+				7C16FF6C2C61210000F77998 /* HomeTab */,
+				7C16FF6B2C611E4F00F77998 /* TranferTab */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";
@@ -369,22 +425,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C66FC632C5BA0E300A70937 /* UIViewController+Alert.swift in Sources */,
-				207E673D2C5EEB690005A73D /* favouriteListViewController.swift in Sources */,
+				207E673D2C5EEB690005A73D /* FavouritViewController.swift in Sources */,
 				206CFFDE2C5995E4004209C5 /* User.swift in Sources */,
-				20C50F782C6018C7003DC8B2 /* profileInformationViewController.swift in Sources */,
+				20C50F782C6018C7003DC8B2 /* ProfileInformationViewController.swift in Sources */,
 				20C50F742C601704003DC8B2 /* SettingViewController.swift in Sources */,
 				206CFFC62C59951E004209C5 /* ViewController.swift in Sources */,
 				200EFAD42C59B0AB00DD7EC9 /* Transaction.swift in Sources */,
-				2014819A2C5D2770004E6331 /* secoundTransactionConfirmationViewController.swift in Sources */,
+				2014819A2C5D2770004E6331 /* SecoundTransactionConfirmationViewController.swift in Sources */,
 				200EFACA2C59A22A00DD7EC9 /* RegisterViewController.swift in Sources */,
 				207AC2B02C5A83D300E4919C /* CompleteRegister.swift in Sources */,
-				20C50F7A2C601B6C003DC8B2 /* editProfileViewController.swift in Sources */,
+				20C50F7A2C601B6C003DC8B2 /* EditProfileViewController.swift in Sources */,
 				2066741A2C5C0C5B0070C5DD /* Borderders.swift in Sources */,
 				20F8172F2C605420006F7BA3 /* successfulTransactoinViewController.swift in Sources */,
 				7CF29D1D2C5EAEAE00EB1DEA /* CustomTabBarController.swift in Sources */,
 				200EFACC2C59A6BB00DD7EC9 /* LoginViewController.swift in Sources */,
 				7C66FC5E2C5B9C1D00A70937 /* Constants.swift in Sources */,
-				20C50F7C2C601C03003DC8B2 /* changePasswordViewController.swift in Sources */,
+				20C50F7C2C601C03003DC8B2 /* ChangePasswordViewController.swift in Sources */,
 				20F8172B2C604F00006F7BA3 /* transactionDetailsViewController.swift in Sources */,
 				7CF29D212C5EAF8400EB1DEA /* CardsViewController.swift in Sources */,
 				204643942C5C2A3B00204DE6 /* FavoritesViewController.swift in Sources */,
@@ -393,12 +449,12 @@
 				7CF29D1F2C5EAF4D00EB1DEA /* TransactionsViewController.swift in Sources */,
 				206674182C5C0AC80070C5DD /* TransferViewController.swift in Sources */,
 				204643922C5C2A1F00204DE6 /* FavoriteTableViewCell.swift in Sources */,
-				20C50F762C601820003DC8B2 /* profileViewController.swift in Sources */,
+				20C50F762C601820003DC8B2 /* ProfileViewController.swift in Sources */,
 				209760762C5D2CC2008ECEBC /* SceneDelegate.swift in Sources */,
 				7C66FC612C5BA07D00A70937 /* String+trimm.swift in Sources */,
 				207E48612C5AC12C005932CD /* OptionsViewController.swift in Sources */,
 				7CF29D232C5EAFC300EB1DEA /* MoreViewController.swift in Sources */,
-				201481982C5D22CF004E6331 /* firstTransferConfirmationViewController.swift in Sources */,
+				201481982C5D22CF004E6331 /* FirstTransferConfirmationViewController.swift in Sources */,
 				207E485F2C5AC0FA005932CD /* OptionTableViewCell.swift in Sources */,
 				20F8172D2C605379006F7BA3 /* notificationsViewController.swift in Sources */,
 			);

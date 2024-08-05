@@ -20,6 +20,13 @@ struct VCs {
     static let login = "LoginViewController"
     static let regiseration = "RegisterViewController"
     static let completeRegister = "CompleteRegister"
+    static let firstTransferViewController = "FirstTransferViewController"
+    static let secoundTransactionConfirmationViewController = "SecoundTransactionConfirmationViewController"
+    static let favouritViewController = "FavouritViewController"
+    static let ProfileViewController = "ProfileViewController"
+    
+
+
  
 
 }

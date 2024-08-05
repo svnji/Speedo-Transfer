@@ -1,5 +1,5 @@
 //
-//  changePasswordViewController.swift
+//  profileInformationViewController.swift
 //  MoneyTransferApp
 //
 //  Created by Daddy on 04/08/2024.
@@ -7,10 +7,13 @@
 
 import UIKit
 
-class changePasswordViewController: UIViewController {
-    @IBOutlet weak var changePasswordView: UIView!
-    @IBOutlet weak var currentPasswordTextField: UITextField!
-    @IBOutlet weak var newPasswordTextFeild: UITextField!
+class ProfileInformationViewController: UIViewController {
+    @IBOutlet weak var profileInformationView: UIView!
+    @IBOutlet weak var fullNameLabel: UIView!
+    @IBOutlet weak var emailLabeld: UILabel!
+    @IBOutlet weak var dateOfBirthLabel: UILabel!
+    @IBOutlet weak var countryLabel: UILabel!
+    @IBOutlet weak var bankAccountLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +23,7 @@ class changePasswordViewController: UIViewController {
 
     private func setupGradientBackground() {
         let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = changePasswordView.bounds
+        gradientLayer.frame = profileInformationView.bounds
         if let TransferViewColor = UIColor(named: "MainViewColor") {
             gradientLayer.colors = [TransferViewColor.cgColor, UIColor.red.cgColor]
         } else {
@@ -28,9 +31,7 @@ class changePasswordViewController: UIViewController {
         }
         gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.0)
         gradientLayer.endPoint = CGPoint(x: 0.5, y: 10.0)
-        changePasswordView.layer.insertSublayer(gradientLayer, at: 0)
+        profileInformationView.layer.insertSublayer(gradientLayer, at: 0)
     }
-    @IBAction func saveBtnTapped(_ sender: Any) {
-    }
-    
+
 }

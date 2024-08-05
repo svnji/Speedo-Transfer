@@ -8,12 +8,15 @@
 import Foundation
 import UIKit
 
-class favouriteLisViewController: UIViewController {
+class FavouritViewController: UIViewController {
 
     @IBOutlet weak var favouriteListView: UIView!
     override func viewDidLoad() {
            super.viewDidLoad()
         setupGradientBackground()
+        self.title = "Favourite"
+        self.navigationController?.navigationBar.tintColor = UIColor.gray
+
        }
     private func setupGradientBackground() {
         let gradientLayer = CAGradientLayer()

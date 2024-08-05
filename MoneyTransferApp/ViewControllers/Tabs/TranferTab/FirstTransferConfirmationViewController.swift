@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 
-class firstTransferViewController: UIViewController {
+class FirstTransferViewController: UIViewController {
 
  
     @IBOutlet weak var firstTransferConfirmationView: UIView!
@@ -22,6 +22,9 @@ class firstTransferViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupGradientBackground()
+        setupNavigationBar()
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+
     }
     
     
@@ -38,7 +41,21 @@ class firstTransferViewController: UIViewController {
         firstTransferConfirmationView.layer.insertSublayer(gradientLayer, at: 0)
     }
     @IBAction func confirmTransferBtnTapped(_ sender: Any) {
+        print("nice")
+        self.goToSecondTransferScreen()
     }
     @IBAction func previousBtnTapped(_ sender: Any) {
     }
+    private func setupNavigationBar() {
+          // Set the title for the navigation bar
+          self.title = "Transfer"
+        self.navigationController?.navigationBar.tintColor = UIColor.gray
+      }
+    private func goToSecondTransferScreen (){
+        let sb = UIStoryboard(name: StoryBoards.main, bundle: nil)
+        let secoundTransactionConfirmationViewController = sb.instantiateViewController(withIdentifier: VCs.secoundTransactionConfirmationViewController) as! SecoundTransactionConfirmationViewController
+        self.navigationController?.pushViewController(secoundTransactionConfirmationViewController, animated: true)
+   
+    }
+    
 }

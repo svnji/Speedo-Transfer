@@ -21,7 +21,7 @@ class TransferViewController: UIViewController, FavoritesViewControllerDelegate 
         super.viewDidLoad()
 //        setupGradientBackground()
         setupNavigationBar()
-        
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
     private func setupGradientBackground() {
@@ -46,6 +46,8 @@ class TransferViewController: UIViewController, FavoritesViewControllerDelegate 
     
     @IBAction func continueBtnTapped(_ sender: Any) {
         // Handle continue action
+        print("tap")
+        self.goToFirstTransferScreen()
     }
     
     func didSelectFavorite(_ favorite: Favorite) {
@@ -56,4 +58,10 @@ class TransferViewController: UIViewController, FavoritesViewControllerDelegate 
           // Set the title for the navigation bar
           self.title = "Transfer"
       }
+    private func goToFirstTransferScreen (){
+        let sb = UIStoryboard(name: StoryBoards.main, bundle: nil)
+        let firstTransferViewController = sb.instantiateViewController(withIdentifier: VCs.firstTransferViewController) as! FirstTransferViewController
+        self.navigationController?.pushViewController(firstTransferViewController, animated: true)
+   
+    }
 }
