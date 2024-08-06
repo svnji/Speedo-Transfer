@@ -92,7 +92,7 @@ class HomeViewController: UIViewController {
     }
     private func goAccountScreen (){
         let sb = UIStoryboard(name: StoryBoards.main, bundle: nil)
-        let accountVC = sb.instantiateViewController(withIdentifier: VCs.ProfileViewController) as! ProfileViewController
+        let accountVC = sb.instantiateViewController(withIdentifier: VCs.profileViewController) as! ProfileViewController
         self.navigationController?.pushViewController(accountVC, animated: true)
    
     }

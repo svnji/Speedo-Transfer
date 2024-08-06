@@ -29,6 +29,9 @@ class MoreViewController: UIViewController {
         self.navigationController?.pushViewController(favouritViewController, animated: true)
     }
     @IBAction func profileBtnTapped(_ sender: Any) {
+        let sb = UIStoryboard(name: StoryBoards.main, bundle: nil)
+        let profileViewController = sb.instantiateViewController(withIdentifier: VCs.profileViewController) as! ProfileViewController
+        self.navigationController?.pushViewController(profileViewController, animated: true)
     }
     @IBAction func helpBtnTapped(_ sender: Any) {
     }

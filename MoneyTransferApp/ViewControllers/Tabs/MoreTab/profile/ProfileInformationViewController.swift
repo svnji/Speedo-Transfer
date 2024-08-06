@@ -18,6 +18,7 @@ class ProfileInformationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupGradientBackground()
+        setupNavigationBar()
     }
     
 
@@ -33,5 +34,10 @@ class ProfileInformationViewController: UIViewController {
         gradientLayer.endPoint = CGPoint(x: 0.5, y: 10.0)
         profileInformationView.layer.insertSublayer(gradientLayer, at: 0)
     }
+    private func setupNavigationBar() {
+          // Set the title for the navigation bar
+          self.title = "Personal Information"
+        self.navigationController?.navigationBar.tintColor = UIColor.gray
+      }
 
 }

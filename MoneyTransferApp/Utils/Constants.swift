@@ -23,9 +23,19 @@ struct VCs {
     static let firstTransferViewController = "FirstTransferViewController"
     static let secoundTransactionConfirmationViewController = "SecoundTransactionConfirmationViewController"
     static let favouritViewController = "FavouritViewController"
-    static let ProfileViewController = "ProfileViewController"
+    static let profileViewController = "ProfileViewController"
     static let transactionDetailsViewController = "transactionDetailsViewController"
     static let CardsViewController = "CardsViewController"
+    static let profileInformationViewController = "ProfileInformationViewController"
+    static let settingViewController = "SettingViewController"
+    static let editProfileViewController = "EditProfileViewController"
+    static let changePasswordViewController = "ChangePasswordViewController"
+
+    
+
+    
+    
+    
 
 
  

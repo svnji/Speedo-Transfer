@@ -17,6 +17,7 @@ class EditProfileViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupGradientBackground()
+        self.title = "Edit Profile"
     }
     
 

@@ -16,6 +16,8 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
 
         setupGradientBackground()
+        setupNavigationBar()
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
 
@@ -32,12 +34,24 @@ class ProfileViewController: UIViewController {
         profileView.layer.insertSublayer(gradientLayer, at: 0)
     }
     @IBAction func profileInformationBtnTapped(_ sender: Any) {
+        let sb = UIStoryboard(name: StoryBoards.main, bundle: nil)
+        let profileInformationViewController = sb.instantiateViewController(withIdentifier: VCs.profileInformationViewController) as! ProfileInformationViewController
+        self.navigationController?.pushViewController(profileInformationViewController, animated: true)
     }
     @IBAction func settingBtnTapped(_ sender: Any) {
+        let sb = UIStoryboard(name: StoryBoards.main, bundle: nil)
+        let settingViewController = sb.instantiateViewController(withIdentifier: VCs.settingViewController) as! SettingViewController
+        self.navigationController?.pushViewController(settingViewController, animated: true)
+        
     }
     @IBAction func paymentHistoryBtnTapped(_ sender: Any) {
     }
     @IBAction func myFavouriteListBtnTapped(_ sender: Any) {
     }
+    private func setupNavigationBar() {
+          // Set the title for the navigation bar
+          self.title = "Profile"
+        self.navigationController?.navigationBar.tintColor = UIColor.gray
+      }
     
 }

@@ -13,6 +13,8 @@ class SettingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupGradientBackground()
+        setupNavigationBar()
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
 
@@ -29,7 +31,20 @@ class SettingViewController: UIViewController {
         settingView.layer.insertSublayer(gradientLayer, at: 0)
     }
     @IBAction func changePasswordBtnTapped(_ sender: Any) {
+        
+        let sb = UIStoryboard(name: StoryBoards.main, bundle: nil)
+        let changePasswordViewController = sb.instantiateViewController(withIdentifier: VCs.changePasswordViewController) as! ChangePasswordViewController
+        self.navigationController?.pushViewController(changePasswordViewController, animated: true)
     }
     @IBAction func editProfileBtnTapped(_ sender: Any) {
+        
+        let sb = UIStoryboard(name: StoryBoards.main, bundle: nil)
+        let editProfileViewController = sb.instantiateViewController(withIdentifier: VCs.editProfileViewController) as! EditProfileViewController
+        self.navigationController?.pushViewController(editProfileViewController, animated: true)
     }
+    private func setupNavigationBar() {
+          // Set the title for the navigation bar
+          self.title = "Setting"
+        self.navigationController?.navigationBar.tintColor = UIColor.gray
+      }
 }
