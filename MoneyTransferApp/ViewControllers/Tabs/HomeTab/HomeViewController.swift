@@ -1,44 +1,38 @@
-//
-//  MainViewController.swift
-//  MoneyTransferApp
-//
-//  Created by Daddy on 31/07/2024.
-//
-
 import Foundation
 import UIKit
 
 class HomeViewController: UIViewController {
 
- 
-   
     @IBOutlet weak var mainView: UIView!
-    
     @IBOutlet weak var currentBalance: UILabel!
-    
     @IBOutlet weak var recentTransactionDateAndStatus3: UILabel!
     @IBOutlet weak var recentTransactionMasterCard3: UILabel!
     @IBOutlet weak var recentTransactionValue3: UILabel!
     @IBOutlet weak var recentTransactionName3: UILabel!
-    
     @IBOutlet weak var recentTransactionDateAndStatus2: UILabel!
     @IBOutlet weak var recentTransactionMasterCard2: UILabel!
     @IBOutlet weak var recentTransactionValue2: UILabel!
     @IBOutlet weak var recentTransactionName2: UILabel!
-    
     @IBOutlet weak var recentTransactionDateAndStatus1: UILabel!
     @IBOutlet weak var recentTransactionMasterCard1: UILabel!
     @IBOutlet weak var recentTransactionValue1: UILabel!
     @IBOutlet weak var recentTransactionName1: UILabel!
-    
+
     var recentTransactions : [Transaction] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupGradientBackground()
         setUpRecentTransactions()
+        self.fetchAccountBalance()
+//        if let token = Session.shared.authToken {
+//                  print("Token: \(token)")
+////                  fetchAccountBalance(token: token)
+//              } else {
+//                  print("No token available")
+//              }
     }
-    
-    
+
     private func setupGradientBackground() {
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = mainView.bounds
@@ -51,50 +45,80 @@ class HomeViewController: UIViewController {
         gradientLayer.endPoint = CGPoint(x: 0.5, y: 10.0)
         mainView.layer.insertSublayer(gradientLayer, at: 0)
     }
-    func setUpRecentTransactions(){
+
+    func setUpRecentTransactions() {
         let transaction1 = Transaction(recipientName: "Anwar", MasterCardId: "1456", amount: "1500", date: "Today 12:00 - Recived")
         recentTransactions.append(transaction1)
         recentTransactionDateAndStatus1.text = transaction1.date
         recentTransactionMasterCard1.text = transaction1.MasterCardId
         recentTransactionValue1.text = transaction1.amount
         recentTransactionName1.text = transaction1.recipientName
-        
     }
+
+    private func fetchAccountBalance() {
+        // Use the token from the Session singleton
+        let token = Session.shared.authToken
+        
+        if token.isEmpty {
+            print("Token is empty")
+            return
+        }
+        
+        print("Token: \(token)")
+
+        AccountService.shared.fetchAccountBalance(with: token) { result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let balance):
+                    self.currentBalance.text = "\(balance)"
+                    
+                case .failure(let error):
+                    print("Error fetching balance: \(error)")
+                    self.showAlert(title: "Error", message: "Failed to fetch account balance.")
+                }
+            }
+        }
+    }
+
+
+
     @IBAction func transferBtnTapped(_ sender: Any) {
         self.goToFirstTransferScreen()
     }
+
     @IBAction func transactionsBtnTapped(_ sender: Any) {
-        self.goToTransactionsScreen ()
+        self.goToTransactionsScreen()
     }
+
     @IBAction func cardsBtnTapped(_ sender: Any) {
-        self.goCardsScreen ()
+        self.goCardsScreen()
     }
+
     @IBAction func accountBTnTapped(_ sender: Any) {
-        self.goAccountScreen ()
+        self.goAccountScreen()
     }
-    private func goToFirstTransferScreen (){
+
+    private func goToFirstTransferScreen() {
         let sb = UIStoryboard(name: StoryBoards.main, bundle: nil)
         let firstTransferViewController = sb.instantiateViewController(withIdentifier: VCs.firstTransferViewController) as! FirstTransferViewController
         self.navigationController?.pushViewController(firstTransferViewController, animated: true)
-   
     }
-    private func goToTransactionsScreen (){
+
+    private func goToTransactionsScreen() {
         let sb = UIStoryboard(name: StoryBoards.main, bundle: nil)
         let transactionsVC = sb.instantiateViewController(withIdentifier: VCs.transactionDetailsViewController) as! transactionDetailsViewController
         self.navigationController?.pushViewController(transactionsVC, animated: true)
-   
     }
-    private func goCardsScreen (){
+
+    private func goCardsScreen() {
         let sb = UIStoryboard(name: StoryBoards.main, bundle: nil)
         let cardsVC = sb.instantiateViewController(withIdentifier: VCs.CardsViewController) as! CardsViewController
         self.navigationController?.pushViewController(cardsVC, animated: true)
-   
     }
-    private func goAccountScreen (){
+
+    private func goAccountScreen() {
         let sb = UIStoryboard(name: StoryBoards.main, bundle: nil)
         let accountVC = sb.instantiateViewController(withIdentifier: VCs.profileViewController) as! ProfileViewController
         self.navigationController?.pushViewController(accountVC, animated: true)
-   
     }
 }
-

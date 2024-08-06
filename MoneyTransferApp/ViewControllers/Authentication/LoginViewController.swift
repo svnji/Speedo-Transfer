@@ -34,6 +34,7 @@ class LoginViewController: UIViewController {
                     // Handle successful login
                     if let token = response["token"] as? String {
                         print("Token: \(token)")
+                        Session.shared.authToken = token
                         
                         // Show alert before navigating
                         self.showAlertWithCompletion(title: "Success", message: "Successfully logged in") {
