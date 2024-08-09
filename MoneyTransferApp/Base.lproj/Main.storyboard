@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F8h-5q-dou">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LIR-zZ-e4p">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -786,7 +786,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Acy-SG-fKY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5374.3999999999996" y="1443.1034482758621"/>
+            <point key="canvasLocation" x="5354" y="1187"/>
         </scene>
         <!--First Transfer View Controller-->
         <scene sceneID="sr2-nZ-me5">
@@ -1127,7 +1127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nsa-BP-E6e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6127.1999999999998" y="1443.8423645320197"/>
+            <point key="canvasLocation" x="6105" y="1187"/>
         </scene>
         <!--Secound Transaction Confirmation View Controller-->
         <scene sceneID="RIp-Ip-ugM">
@@ -1266,7 +1266,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RUL-1x-BSP">
-                                        <rect key="frame" x="39" y="366" width="302" height="119"/>
+                                        <rect key="frame" x="39" y="366" width="310.33333333333331" height="119"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppQ-F9-Lmf">
                                                 <rect key="frame" x="89" y="15" width="40" height="21"/>
@@ -1308,7 +1308,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LtO-Bt-bcX">
-                                        <rect key="frame" x="43" y="522" width="294" height="119"/>
+                                        <rect key="frame" x="43.333333333333343" y="522" width="301.66666666666663" height="119"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="To" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xkx-o9-PAO">
                                                 <rect key="frame" x="90" y="19" width="19" height="21"/>
@@ -1360,13 +1360,13 @@
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your transfer was successful" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqC-9u-1OA">
-                                        <rect key="frame" x="52" y="333" width="269" height="26"/>
+                                        <rect key="frame" x="52" y="333" width="279.33333333333331" height="26"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Check mark" translatesAutoresizingMaskIntoConstraints="NO" id="9Tf-qD-YOH">
-                                        <rect key="frame" x="132" y="210" width="110" height="109"/>
+                                        <rect key="frame" x="132" y="210" width="113" height="109"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transfer amount " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNb-7h-y3a">
                                         <rect key="frame" x="17" y="647" width="130" height="21"/>
@@ -1408,7 +1408,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCE-kS-va4">
-                                        <rect key="frame" x="39" y="691" width="287.66666666666669" height="38.333333333333371"/>
+                                        <rect key="frame" x="39" y="691" width="298" height="38.333333333333371"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Back to Home">
                                             <color key="baseBackgroundColor" red="0.35252401230000002" green="0.05907138437" blue="0.14559403060000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1462,7 +1462,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D6S-hk-gJR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6813.6000000000004" y="1443.8423645320197"/>
+            <point key="canvasLocation" x="6793" y="1187"/>
         </scene>
         <!--Home-->
         <scene sceneID="5e1-h4-WRL">
@@ -2010,7 +2010,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Nb-Yc-Gq3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3445.5999999999999" y="1376.600985221675"/>
+            <point key="canvasLocation" x="3446" y="1207"/>
         </scene>
         <!--Custom Tab Bar Controller-->
         <scene sceneID="Dnt-q1-RyH">
@@ -4052,7 +4052,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1eg-YF-s8B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4432.8000000000002" y="1443.8423645320197"/>
+            <point key="canvasLocation" x="4420" y="1192"/>
         </scene>
         <!--Item-->
         <scene sceneID="OEM-TG-jWT">
